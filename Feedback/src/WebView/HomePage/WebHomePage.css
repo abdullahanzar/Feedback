@@ -1,6 +1,7 @@
 .middle img {
   position: relative;
   left: 2%;
+  scale: 0.9;
 }
 
 .middle p:first-of-type {
@@ -43,5 +44,10 @@
 @media screen and (max-width: 1200px) {
   .middle p:nth-of-type(2) {
     left: 55%;
+  }
+  .middle img {
+    position: relative;
+    left: 0%;
+    scale: 0.9;
   }
 }

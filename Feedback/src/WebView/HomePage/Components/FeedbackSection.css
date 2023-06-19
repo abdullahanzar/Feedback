@@ -1,0 +1,64 @@
+.FeedbackSection .banner {
+  width: 20%;
+  background: #36416a;
+  height: 8rem;
+  border-radius: 14px;
+  position: relative;
+  left: 5%;
+  bottom: 10rem;
+}
+
+.banner p {
+  color: #fff;
+  position: relative;
+  left: 10%;
+  top: 30%;
+  font-size: 1.05rem;
+}
+
+.banner p:first-of-type {
+  font-size: 2rem;
+}
+
+.FeedbackSection .suggestions {
+  width: 68%;
+  display: flex;
+  gap: 3.5rem;
+  border: 3px solid rgba(54, 65, 106, 0.35);
+  border-radius: 5px;
+  position: relative;
+  left: 27%;
+  bottom: 18rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.FeedbackSection .suggestions button {
+  position: relative;
+  left: 50%;
+  width: 14%;
+  background: #36416a;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 1320px) {
+  .FeedbackSection .suggestions button {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .FeedbackSection .suggestions button {
+    left: 30%;
+  }
+}
+
+.FeedbackSection .suggestions button:hover {
+  background: #fff;
+  color: #36416a;
+  border-color: rgba(54, 65, 106, 0.35);
+  cursor: pointer;
+}

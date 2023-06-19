@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import "./WebHomePage.css";
 import HomeFeed from "./HomeFeed.png";
+import FeedbackSection from "./Components/FeedbackSection";
 
 export default function WebHomePage() {
   return (
@@ -15,6 +16,7 @@ export default function WebHomePage() {
           on all platforms. Observe result manually in real time
         </p>
       </div>
+      <FeedbackSection />
     </div>
   );
 }
