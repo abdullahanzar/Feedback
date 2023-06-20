@@ -34,19 +34,20 @@
 }
 
 .FeedbackSection .suggestions button {
-  position: relative;
-  left: 50%;
+  position: absolute;
+  left: 80%;
   width: 14%;
   background: #36416a;
   border-radius: 7px;
   color: #fff;
   font-size: 1rem;
   padding: 0.3rem;
+  border: none;
 }
 
-@media screen and (max-width: 1320px) {
+/* @media screen and (max-width: 1320px) {
   .FeedbackSection .suggestions button {
-    left: 40%;
+    left: 80%;
   }
 }
 
@@ -54,11 +55,50 @@
   .FeedbackSection .suggestions button {
     left: 30%;
   }
-}
+} */
 
 .FeedbackSection .suggestions button:hover {
   background: #fff;
   color: #36416a;
   border-color: rgba(54, 65, 106, 0.35);
+  border: 1px solid #36416a;
   cursor: pointer;
+}
+
+.suggestions p {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.suggestions p span {
+  cursor: pointer;
+}
+
+.FeedbackSection .choiceCard {
+  background: #ffffff;
+  box-shadow: 0px 0px 17.5051px rgba(0, 0, 0, 0.15);
+  border-radius: 11.3783px;
+  width: 16%;
+  height: fit-content;
+  position: relative;
+  left: 5%;
+  bottom: 12rem;
+  padding: 2%;
+}
+
+.choiceCard button {
+  background: rgba(54, 65, 106, 0.15);
+  border-radius: 25.0428px;
+  padding: 0.7rem 1.8rem;
+  margin: 0.5rem;
+  border: none;
+}
+
+.choiceCard button:hover {
+  cursor: pointer;
+}
+
+.choiceCard .selected {
+  background-color: #36416a;
+  color: #fff
 }

@@ -23,7 +23,9 @@ const FeedbackProduct = mongoose.model('Feedback-Product', {
     category: Array, 
     logoURL: String,
     productLink: String, 
-    productDescrip: String
+    productDescrip: String,
+    upVotes: Number,
+    comments: Array,
 })
 
 async function authenticate(email, password) {
@@ -152,6 +154,46 @@ app.get('/feedback', async(req, res)=>{
     }
     catch(e) {
         res.json({error: e})
+    }
+})
+
+app.post('/comment', async(req, res)=>{
+    const {companyName, comment} = req.body;
+    if(!companyName, !comment)
+    return res.json({error: 'empty comment/ wrong company name'})
+    try {
+        const found = await FeedbackProduct.findOneAndUpdate({companyName}, {$push: {comments: comment}}, {
+            new: true
+        })
+        res.json(found)
+    } catch(e) {
+        res.json({
+            error: e,
+        })
+    }
+})
+
+app.post('/upvote', async(req, res)=>{
+    const {companyName} = req.body;
+    if(!companyName)
+    return res.json({error: 'empty comment/ wrong company name'})
+    try {
+        const check = await FeedbackProduct.findOne({companyName});
+        if(check==null || check==undefined) return res.json({error: "This company doesn't exist in the database"}) 
+        if(check.upVotes!=null) {
+        const found = await FeedbackProduct.findOneAndUpdate({companyName}, {$inc: {upVotes: 1}}, {
+            new: true
+        })
+        return res.json({upVotes: found.upVotes})
+        }
+        const found = await FeedbackProduct.findOneAndUpdate({companyName},  {upVotes: 0}, {
+            new: true
+        })
+        return res.json({upVotes: found.upVotes})
+    } catch(e) {
+        res.json({
+            error: e,
+        })
     }
 })
 
