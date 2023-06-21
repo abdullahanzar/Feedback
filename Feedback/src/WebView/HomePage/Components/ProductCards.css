@@ -1,0 +1,72 @@
+.cards {
+  position: relative;
+  width: 74.5%;
+  left: 25%;
+  bottom: 32rem;
+  overflow-x: hidden;
+}
+
+.cards .card {
+  position: relative;
+  background: rgba(54, 65, 106, 0.15);
+  margin: 2rem;
+}
+
+.cards .card img {
+  scale: 0.8;
+  position: relative;
+  left: 0.5%;
+  top: 0.5rem;
+}
+
+.cards .card p:first-of-type {
+  color: #36416a;
+  font-weight: 700;
+  font-size: 1.15rem;
+  position: absolute;
+  left: 8%;
+  bottom: 7.5rem;
+}
+
+.cards .card p:nth-of-type(2) {
+  position: relative;
+  left: 8%;
+  bottom: 1.75rem;
+}
+
+.card button {
+  background: #c0ceff;
+  border-radius: 20.9396px;
+  border: none;
+  padding: 0.75rem;
+  position: relative;
+  margin: 0.6rem;
+  left: 7%;
+  bottom: 1.25rem;
+}
+
+.cards .card button:hover {
+  background: #36416a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cards .card .upvotes {
+  display: flex;
+  flex-direction: column;
+  background: #c7cbd6;
+  border-radius: 15.9836px;
+  padding: 0.8rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: absolute;
+  left: 90%;
+  bottom: 3.7rem;
+}
+
+.upvotes:hover {
+  cursor: pointer;
+  background: #92959d;
+  color: #fff;
+}

@@ -174,7 +174,10 @@ app.post('/comment', async(req, res)=>{
 })
 
 app.post('/upvote', async(req, res)=>{
-    const {companyName} = req.body;
+    let {companyName} = req.body;
+    try {
+        companyName = JSON.parse(companyName)
+    } catch(e) {}
     if(!companyName)
     return res.json({error: 'empty comment/ wrong company name'})
     try {
