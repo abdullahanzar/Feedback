@@ -34,18 +34,22 @@
   bottom: 1.75rem;
 }
 
-.card button {
+.cards .card .cardContainer {
+  width: 16rem;
+}
+
+.cardContainer button {
   background: #c0ceff;
   border-radius: 20.9396px;
   border: none;
   padding: 0.75rem;
   position: relative;
   margin: 0.6rem;
-  left: 7%;
+  left: 28%;
   bottom: 1.25rem;
 }
 
-.cards .card button:hover {
+.cards .cardContainer button:hover {
   background: #36416a;
   color: #fff;
   cursor: pointer;
@@ -69,4 +73,23 @@
   cursor: pointer;
   background: #92959d;
   color: #fff;
+}
+
+.cards .card .comment {
+  position: absolute;
+  left: 90.5%;
+  bottom: 1.7rem;
+}
+
+.cards .card .commentButton {
+  color: #ababab;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 24%;
+}
+
+@media screen and (max-width: 1360px) {
+  .cards .card .commentButton {
+    left: 44%;
+  }
 }
