@@ -52,7 +52,7 @@ export default function FeedbackSection() {
           );
         })}
       </div>
-      <ProductCards sortBy={sortBy} chosenCategory={chosenCategory} />
+      <ProductCards sortBy={sortBy} chosenCategory={chosenCategory}/>
     </div>
   );
 }

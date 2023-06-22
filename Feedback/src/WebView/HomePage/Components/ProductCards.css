@@ -23,15 +23,15 @@
   color: #36416a;
   font-weight: 700;
   font-size: 1.15rem;
-  position: absolute;
+  position: relative;
   left: 8%;
-  bottom: 7.5rem;
+  top: -3.5rem;
 }
 
 .cards .card p:nth-of-type(2) {
   position: relative;
   left: 8%;
-  bottom: 1.75rem;
+  bottom: 2.2rem;
 }
 
 .cards .card .cardContainer {
@@ -58,6 +58,7 @@
 .cards .card .upvotes {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #c7cbd6;
   border-radius: 15.9836px;
   padding: 0.8rem;
@@ -66,19 +67,19 @@
   font-size: 1rem;
   position: absolute;
   left: 90%;
-  bottom: 3.7rem;
+  bottom: 4.7rem;
 }
 
 .upvotes:hover {
   cursor: pointer;
-  background: #92959d;
+  background: #626671;
   color: #fff;
 }
 
 .cards .card .comment {
   position: absolute;
   left: 90.5%;
-  bottom: 1.7rem;
+  bottom: 2.7rem;
 }
 
 .cards .card .commentButton {
@@ -86,6 +87,7 @@
   position: absolute;
   bottom: 2.5rem;
   left: 24%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1360px) {
@@ -93,3 +95,59 @@
     left: 44%;
   }
 }
+
+.commentSection {
+  position: relative;
+  background: rgba(54, 65, 106, 0.15);
+  margin: 2rem;
+  bottom: 2rem;
+}
+
+.commentSection input[type="text"] {
+  border-radius: 43px;
+  border: 3px solid #c7cbd6;
+  background: #fff;
+  padding: 0.75rem;
+  width: 90%;
+  position: relative;
+  left: 3.5%;
+}
+
+.previousComments {
+  max-height: 7.5rem;
+  overflow-y: scroll;
+}
+
+.previousComments ul {
+  list-style: none;
+  position: relative;
+  left: 4.5%;
+  top: 0.2rem;
+  width: 92%;
+}
+
+.previousComments ul li::before {
+  content: "\2022";
+  color: #36416a;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.previousComments ul li {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #999;
+  font-family: DM Sans;
+}
+
+.commentSection img {
+  position: absolute;
+  right: 6%;
+  top: 4%;
+  cursor: pointer;
+}
+
+
