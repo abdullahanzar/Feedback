@@ -200,6 +200,10 @@ app.post('/upvote', async(req, res)=>{
     }
 })
 
+app.post('/verify-token', isAuthenticated, (req, res)=>{
+    res.send("Token Valid");
+})
+
 app.use('/', (req, res)=>{
     res.status(404)
     res.json({

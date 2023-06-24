@@ -1,13 +1,22 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { FeedbackContext } from "./FeedbackContext";
 const WebHomePage = lazy(() => import("./WebView/HomePage/WebHomePage.jsx"));
+const WebSignUpPage = lazy(() => import("./WebView/Sign Up Page/WebSignUpPage.jsx"))
 import MVHomePage from "./MobileView/HomePage/MVHomePage";
 
 function App() {
   const isMobile = checkMobile();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  useEffect(()=>{
+    if(localStorage.getItem('token')==null)
+    return setIsLoggedIn(false)
+    async()=>{
+      const token = localStorage.getItem('token');
+      
+    }
+  }, [])
   return (
     <FeedbackContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
       {isMobile ? (
@@ -21,6 +30,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<WebHomePage />} />
+              <Route path="/sign" element={<WebSignUpPage />}/>
             </Routes>
           </BrowserRouter>
         </Suspense>

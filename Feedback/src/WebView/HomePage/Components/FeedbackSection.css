@@ -1,3 +1,7 @@
+.FeedbackSection {
+  height: 0;
+}
+
 .FeedbackSection .banner {
   width: 20%;
   background: #36416a;
@@ -100,5 +104,5 @@
 
 .choiceCard .selected {
   background-color: #36416a;
-  color: #fff
+  color: #fff;
 }
