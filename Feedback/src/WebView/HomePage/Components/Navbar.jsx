@@ -35,7 +35,15 @@ export default function Navbar() {
         </>
       ) : (
         <>
-          <button style={{ left: "84%" }} onClick={()=>setIsLoggedIn(false)}>Log Out</button>
+          <button
+            style={{ left: "84%" }}
+            onClick={() => {
+              setIsLoggedIn(false);
+              localStorage.removeItem("token");
+            }}
+          >
+            Log Out
+          </button>
           <button style={{ border: "none", left: "84%", width: "3.5rem" }}>
             Hello!
           </button>
