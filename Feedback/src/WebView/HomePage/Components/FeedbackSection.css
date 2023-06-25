@@ -106,3 +106,100 @@
   background-color: #36416a;
   color: #fff;
 }
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background: #36416a;
+  width: 50%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+}
+
+.formModal {
+  width: 60%;
+  background: #fff;
+  height: 100%;
+}
+
+.displayModal {
+  width: 40%;
+  background: #36416a;
+  height: 100%;
+}
+
+.displayModal p:first-of-type {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.displayModal p:nth-of-type(2) {
+  color: #fff;
+  font-size: 1.1rem;
+  width: 40%;
+}
+
+.displayModal p {
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+
+.signUpForm {
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+
+.signUpForm form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.signUpForm form img {
+  scale: 0.55;
+}
+
+.signUpForm p:first-child {
+  color: #000;
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.signUpForm input {
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+}
+
+.signUpForm form button[type="submit"] {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 27.907px;
+  background: #36416a;
+  color: #fff;
+  border: none;
+  position: relative;
+  top: 1rem;
+}
+
+.signUpForm form button[type="submit"]:hover {
+  background-color: #111626;
+  cursor: pointer;
+}
+
+.addProducts input {
+  margin: 0.70rem;
+}
+ 
+.signUpForm .addProducts button[type="submit"] {
+  position: relative;
+  right: 55%;
+  top: 3.5rem;
+}

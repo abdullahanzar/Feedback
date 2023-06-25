@@ -14,10 +14,8 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     if (localStorage.getItem("token") == null) return setIsLoggedIn(false);
-    console.log("this is working");
     const check = async () => {
       const token = localStorage.getItem("token");
-      console.log(token);
       try {
         const response = await axios.post(
           "https://feedback-d89u.onrender.com/verify-token",

@@ -106,7 +106,7 @@ function displayCards(
         return (
           <div key={key}>
             <div className="card" key={key}>
-              <img src={`${item.logoURL}`} alt={"image"} />
+              <img src={`${item.logoURL}`} alt={"image"} className="logo"/>
               <p>{item.companyName}</p>
               <p>{item.productDescrip}</p>
               <div
