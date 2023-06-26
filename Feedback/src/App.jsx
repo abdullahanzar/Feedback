@@ -6,7 +6,7 @@ const WebHomePage = lazy(() => import("./WebView/HomePage/WebHomePage.jsx"));
 const WebSignUpPage = lazy(() =>
   import("./WebView/Sign Up Page/WebSignUpPage.jsx")
 );
-import MVHomePage from "./MobileView/HomePage/MVHomePage";
+const MVHomePage = lazy(() => import("./MobileView/HomePage/MVHomePage"));
 import axios from "axios";
 
 function App() {
@@ -37,11 +37,13 @@ function App() {
   return (
     <FeedbackContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
       {isMobile ? (
+        <Suspense fallback={<div>Loading...</div>}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MVHomePage />} />
           </Routes>
         </BrowserRouter>
+        </Suspense>
       ) : (
         <Suspense fallback={<div>Loading...</div>}>
           <BrowserRouter>

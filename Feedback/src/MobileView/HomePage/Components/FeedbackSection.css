@@ -1,0 +1,64 @@
+.FeedbackSection {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suggestions {
+  width: 91%;
+  border-radius: 5.147px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1%;
+  border: 2px solid #36416a26;
+}
+
+.suggestions p:first-of-type {
+  font-weight: 600;
+}
+
+.suggestions p:nth-of-type(2) {
+  color: #8b8b8b;
+  font-size: 0.8rem;
+}
+
+.suggestions button {
+  border-radius: 4.098px;
+  background: #36416a;
+  color: #fff;
+  padding: 0.25rem;
+  border: none;
+  font-size: 0.87rem;
+}
+
+.choiceCard {
+  width: fit-content;
+  max-width: 90%;
+}
+
+.choiceCard p {
+  color: #8b8b8b;
+  margin: 0.35rem;
+  position: relative;
+  right: 2%;
+}
+
+.choiceCard button {
+  border: none;
+  padding: 0.7rem 1.85rem;
+  margin: 0.3rem;
+  border-radius: 20.721px;
+  background: rgba(54, 65, 106, 0.15);
+  font-size: 0.9rem;
+}
+
+.choiceCard .selected {
+  background: #36416a;
+  color: #fff;
+}
+

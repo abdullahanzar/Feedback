@@ -1,0 +1,59 @@
+.MV_navbar {
+  width: 100%;
+  height: 6.5%;
+  background: #36416a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25%;
+  position: sticky;
+  top: 0;
+}
+
+.MV_navbar p:first-of-type {
+    color: #fff;
+    font-size: 1.20rem;
+}
+
+.MV_navbar button {
+    border: none;
+    background: #36416a;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.MV_navbar button:nth-of-type(2) {
+    border: 2px solid #fff;
+    padding: 0.3rem;
+    border-radius: 4.444px;
+}
+
+.MV_navbar button:nth-of-type(2):hover {
+    background: #fff;
+    color: #36416a;
+}
+
+
+
+.MV_navbar img {
+    width: 1.75rem;
+}
+
+.MV_navbar .lgInBt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lgInBt button {
+    margin-right: 1rem;
+}
+
+.lgInBt button:hover {
+    background: #fff;
+    color: #36416a;
+    border: 2px solid #36416a;
+    border-radius: 4.444px;
+    padding: 0.2rem;
+}
