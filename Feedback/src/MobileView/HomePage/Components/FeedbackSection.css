@@ -62,3 +62,101 @@
   color: #fff;
 }
 
+.modal {
+  width: 60%;
+  padding: 1rem;
+  position: relative;
+  left: 15%;
+  top: 30%;
+  height: max-content;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUpForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.signUpForm img {
+  scale: 0.7;
+}
+
+.signUpForm div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.signUpForm p {
+  color: #737373;
+}
+
+.signUpForm button {
+  padding: 0.3rem 2.5rem;
+  border-radius: 14.479px;
+  background: #36416a;
+  color: #fff;
+  border: none;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.signUpForm input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.signUpForm input:focus {
+  padding: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.addProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.addProducts button {
+  padding: 0.3rem 2.5rem;
+  border-radius: 14.479px;
+  background: #36416a;
+  color: #fff;
+  border: none;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.addProducts input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  margin: 0.6rem;
+  padding: 0.25rem;
+}
+
+.addProducts input:focus {
+  padding: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.addProducts p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}

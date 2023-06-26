@@ -7,6 +7,7 @@ const WebSignUpPage = lazy(() =>
   import("./WebView/Sign Up Page/WebSignUpPage.jsx")
 );
 const MVHomePage = lazy(() => import("./MobileView/HomePage/MVHomePage"));
+const MVSignUpPage = lazy(() => import("./MobileView/SignUp Page/MVSignUpPage"))
 import axios from "axios";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MVHomePage />} />
+            <Route path="/sign" element={<MVSignUpPage/>} />
           </Routes>
         </BrowserRouter>
         </Suspense>

@@ -11,6 +11,8 @@
   background: rgba(54, 65, 106, 0.15);
   max-width: 100%;
   margin: 0.5rem;
+  max-height: 13rem;
+  position: relative;
 }
 
 .card img:first-of-type {
@@ -27,8 +29,8 @@
 }
 
 .categoryContainer {
-  position: relative;
-  bottom: 3.5rem;
+  position: absolute;
+  bottom: 12%;
   left: 18.5%;
   width: fit-content;
 }
@@ -49,9 +51,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  position: absolute;
   left: 68%;
-  bottom: 7rem;
+  bottom: 0.85rem;
   width: fit-content;
 }
 
@@ -68,8 +70,8 @@
   border-radius: 12.306px;
   background: #c7cbd6;
   border: none;
-  position: relative;
-  bottom: 13rem;
+  position: absolute;
+  bottom: 58%;
   left: 87%;
 }
 
@@ -77,15 +79,66 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: fit-content;
+  position: absolute;
+  left: 84.5%;
+  scale: 0.8;
+  bottom: 32%;
 }
 
 .card .comment img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.commentSection {
+  width: 22rem;
+  height: fit-content;
+  border-radius: 0 0 0 7px;
+  background: rgba(54, 65, 106, 0.15);
+  max-width: 100%;
+  margin: 0.5rem;
+  max-height: 14rem;
   position: relative;
-  left: 85%;
-  scale: 0.8;
-  bottom: 14rem;
+  bottom: -0.5rem;
+  height: 7rem;
+}
+
+.commentSection input {
+  border-radius: 43px;
+  border: 1.5px solid #c7cbd6;
+  background: #fff;
+  width: 96%;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 90%;
+  left: -0.7%;
+}
+
+.commentSection img {
+  scale: 0.75;
+  position: absolute;
+  left: 87%;
+  bottom: 91.5%;
+}
+
+.previousComments ul li::before {
+  content: "\2022";
+  color: #36416a;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.previousComments {
+  position: relative;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 0.9rem;
+  width: 20rem;
+  height: 5.5rem;
+  overflow-x: scroll;
 }

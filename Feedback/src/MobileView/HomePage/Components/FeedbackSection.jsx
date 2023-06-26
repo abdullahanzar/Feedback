@@ -48,10 +48,6 @@ export default function FeedbackSection() {
             setFormDataLI
           )}
         </div>
-        <div className="displayModal">
-          <p>Feedback</p>
-          <p>Add your product and rate other items.......</p>
-        </div>
       </ReactModal>
       <div className="suggestions">
         <p>
@@ -191,7 +187,7 @@ function displayForm(
             </div>
             <p className="signtext">
               Already have an account?&nbsp;
-              <span
+              <p
                 style={{
                   color: "#36416A",
                   textDecorationLine: "underline",
@@ -200,7 +196,7 @@ function displayForm(
                 onClick={() => setSignUp(false)}
               >
                 Log in
-              </span>
+              </p>
             </p>
             <button type="submit">Sign Up</button>
           </form>
@@ -243,7 +239,7 @@ function displayForm(
           </div>
           <p className="signtext">
             Don't have an account?{" "}
-            <span
+            <p
               style={{
                 color: "#36416A",
                 textDecorationLine: "underline",
@@ -252,7 +248,7 @@ function displayForm(
               onClick={() => setSignUp(true)}
             >
               Sign Up
-            </span>
+            </p>
           </p>
           <button type="submit">Login</button>
         </form>
@@ -260,8 +256,7 @@ function displayForm(
     );
   }
   return (
-    <div className="signUpForm">
-      <p>Add your Product</p>
+    <div>
       <form
         action=""
         method="post"
@@ -271,6 +266,7 @@ function displayForm(
         }
         onSubmit={(e) => handleAddProduct(e, formDataLI, notify)}
       >
+        <p>Add your Product</p>
         <input
           type="text"
           name="companyName"
